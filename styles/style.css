@@ -1,0 +1,95 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Montserrat, sans-serif;
+}
+header{
+    height: 100vh;
+    background-image: url(../images/cloud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.navigation{
+    display: flex;
+}    
+.navigation li{
+    list-style: none;
+    margin-left: 5px;
+}
+.navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin: 5px;
+    padding: 10px 15px;
+}
+/* ----------------------
+     Header banner style
+------------------------- */
+.banner{
+    height: calc(100vh -80px);
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+.left-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left-banner h1{
+    font-size: 45px;
+    color: #fff;
+}
+.hightlight{
+    color: #FF008E; 
+}
+.left-banner p{
+    line-height: 1.5;
+    font-size: 18px;
+    padding: 15px 0;
+}
+.primary-button{
+    outline: none;
+    border: 0;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #cf0a77, #FF008E);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 7px 0 #a8045e ;
+    position: relative;
+    top: 0;
+}
+.primary-button:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #a8045e;
+}
+.right-banner img{
+    width: 100%;
+}
+.right-banner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
